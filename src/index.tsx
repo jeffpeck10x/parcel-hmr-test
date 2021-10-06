@@ -1,10 +1,12 @@
-import { useState } from "react";
 import { render } from "react-dom";
+import { CounterProvider } from "./hooks/counter-context";
+import { Count } from "./components/count";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <div>The count is {count}. <button onClick={() => setCount(count + 1)}>Click</button></div>
+    <CounterProvider>
+      <Count />
+    </CounterProvider>
   )
 }
 
