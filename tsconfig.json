@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve"
+  },
+  "exclude": [".git", ".parcel-cache", "**/dist/*", "**/node_modules/*", "node_modules"]
+}
+
