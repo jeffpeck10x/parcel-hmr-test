@@ -1,0 +1,16 @@
+{
+  "name": "@parcel-hmr-test/demo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Demo",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "parcel serve src/index.html --open $BROWSER --no-cache",
+    "build": "parcel build src/index.html --no-cache --no-scope-hoist --public-url ./"
+  },
+  "browserslist": "> 0.2%, not op_mini all",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}

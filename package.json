@@ -1,0 +1,17 @@
+{
+  "name": "@parcel-hmr-test/test",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Parcel HMR Test",
+  "license": "UNLICENSED",
+  "author": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @parcel-hmr-test/demo start"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
