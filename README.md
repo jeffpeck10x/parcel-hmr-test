@@ -1,16 +1,16 @@
-# parcel-hmr-test
-Demonstrate React HMR bug in parcel 2.0.0-rc.0
+# Parcel Broken HMR Test
 
-## Steps to Observe Issue
+## Steps
 
-```
+```shell
 git clone https://github.com/jeffpeck10x/parcel-hmr-test.git
 cd parcel-hmr-test
 yarn
 yarn dev
 ```
 
-Now, make a change to `src/index.tsx` (for example add `console.log("test")`) and observe that HMR works.
+Make a change to `src/components/Hello.tsx` (i.e. update the console output or change the text to "Hello 1", etc.).
 
-Next, change branches...
+Observe that the page does not update.
 
+Now, 
