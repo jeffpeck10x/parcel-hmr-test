@@ -25,3 +25,20 @@ Put it back and notice again that HMR is now broken again:
 yarn workspace @parcel-hmr-test/storybook add --dev @storybook/react@^6.1.17
 yarn dev
 ```
+
+Now, take it out again, and try adding the following dependencies from @storybook/react:
+```shell
+yarn workspace @parcel-hmr-test/storybook remove @storybook/react
+yarn workspace @parcel-hmr-test/storybook add --dev react-refresh@^0.8.3
+yarn workspace @parcel-hmr-test/storybook add --dev @pmmmwh/react-refresh-webpack-plugin@^0.4.3
+```
+
+Notice that HMR is still broken when the dependencies are just:
+```json
+  {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "react-refresh": "^0.8.3"
+  }
+```
+
+I have also observed that just one of those dependencies alone does not break parcel HRM.
